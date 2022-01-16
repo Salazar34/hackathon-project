@@ -1,6 +1,16 @@
 <script>
 export default {
   name: "Navbar",
+  methods: {
+    onClick() {
+      const btn = document.querySelector(".mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    },
+  },
 };
 </script>
 
@@ -29,7 +39,7 @@ export default {
           </div>
         </div>
         <div class="md:hidden flex items-center">
-          <button class="outline-none mobile-menu-button">
+          <button class="outline-none mobile-menu-button" @click="onClick()">
             <svg
               class="w-6 h-6 text-gray-500 hover:text-indigo-500"
               x-show="!showMenu"
@@ -47,7 +57,7 @@ export default {
       </div>
     </div>
     <div class="hidden mobile-menu">
-      <ul class="">
+      <ul class="flex flex-col items-center">
         <li class="active">
           <router-link class="nav-link" to="/">Home</router-link>
         </li>

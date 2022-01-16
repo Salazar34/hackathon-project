@@ -22,37 +22,25 @@
 
     <div class="grid grid-cols-3 gap-40 pt-40">
       <div class="container flex flex-col items-center">
-        <h1 class="text-3xl pb-10">Good behavior bonus</h1>
-        <img src="../assets/credit-card.png" alt="" width="250" />
-        <p class="security-goal">
-          The good conduct of citizens will be rewarded with city credits,
-          usable by the citizens themselves in shops and/ or supermarkets. These
-          credits can be included in your Curriculum Vitae (C.V.) or presented
-          to your school or university to demonstrate your social and civic
-          contribution.
-        </p>
+        <Column
+          header="Good behavior bonus"
+          imgPath="credit-card.png"
+          text="The good conduct of citizens will be rewarded with city credits, usable by the citizens themselves in shops and/ or supermarkets. These credits can be included in your Curriculum Vitae (C.V.) or presented to your school or university to demonstrate your social and civic contribution. "
+        />
       </div>
       <div class="container flex flex-col items-center">
-        <h1 class="text-3xl pb-10">City surveillance body</h1>
-        <img src="../assets/police.png" alt="" width="250" />
-        <p class="security-goal">
-          The city’s surveillance corps is made up of qualified and specially
-          trained police officers to ensure maximum security within the city.
-          All police officers will be trained periodically with refresher
-          courses in which new techniques and practices will be shown to ensure
-          maximum safety.
-        </p>
+        <Column
+          header="City surveillance body"
+          imgPath="police.png"
+          text="The city’s surveillance corps is made up of qualified and specially trained police officers to ensure maximum security within the city. All police officers will be trained periodically with refresher courses in which new techniques and practices will be shown to ensure maximum safety."
+        />
       </div>
       <div class="container flex flex-col items-center">
-        <h1 class="text-3xl pb-10">Eagle 360</h1>
-        <img src="../assets/eagle.png" alt="" width="250" />
-        <p class="security-goal">
-          Eagle 360 is an advanced city monitoring system that allows city
-          authorities to monitor comfortably and safely in every corner of the
-          city. Citizens, by downloading an app, will be able to report any kind
-          of infringement or crime to the authorities, actively contributing to
-          the project.
-        </p>
+        <Column
+          header="Eagle 360"
+          imgPath="eagle.png"
+          text="Eagle 360 is an advanced city monitoring system that allows city authorities to monitor comfortably and safely in every corner of the city. Citizens, by downloading an app, will be able to report any kind of infringement or crime to the authorities, actively contributing to the project. "
+        />
         <Button text="Learn more about Eagle 360" destination="contribute" />
       </div>
     </div>
@@ -60,17 +48,25 @@
   <Footer />
 </template>
 
-<script setup>
+<script>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import Button from "../components/Button.vue";
+import Column from "../components/Column.vue";
+
+export default {
+  name: "CitySecurity",
+  components: {
+    Navbar,
+    Footer,
+    Button,
+    Column,
+  },
+};
 </script>
 
 <style scoped>
 .main-content {
   @apply pt-20;
-}
-p.security-goal {
-  @apply text-lg py-10 text-justify w-96;
 }
 </style>
