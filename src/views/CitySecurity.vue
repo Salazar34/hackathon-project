@@ -1,9 +1,13 @@
 <template>
   <Navbar />
   <div class="container mx-auto flex flex-col items-center main-content pb-10">
-    <h1 class="text-5xl">Our <b>Cities Security</b></h1>
+    <h1 class="text-5xl lg:text-center text-center">
+      Our <b>Cities Security</b>
+    </h1>
     <img class="py-10" src="../assets/city-security.png" alt="" width="250" />
-    <p class="text-lg w-1/2 text-justify leading-relaxed">
+    <p
+      class="lg:text-lg lg:w-1/2 w-9/12 leading-relaxed text-justify leading-relaxed"
+    >
       The security of cities is a subject of great importance that is at the
       basis of civility and peaceful coexistence. It is precisely for this
       reason that it is necessary to act in a timely manner by implementing
@@ -11,7 +15,9 @@
       individual city.
     </p>
 
-    <p class="text-lg w-1/2 text-justify leading-relaxed">
+    <p
+      class="lg:text-lg lg:w-1/2 w-9/12 leading-relaxed text-justify leading-relaxed"
+    >
       <br />For this reason, it is necessary to go beyond the police: Although
       necessary, they are not enough to ensure maximum safety. By analysing the
       current cases of crime in cities, it has emerged that there is a lack of
@@ -20,7 +26,9 @@
       basis, a city surveillance.
     </p>
 
-    <div class="grid grid-cols-3 gap-40 pt-40">
+    <div
+      class="grid lg:grid-cols-3 lg:gap-40 gap-10 pt-40 lg:shrink md:shrink-0"
+    >
       <div class="container flex flex-col items-center">
         <Column
           header="Good behavior bonus"

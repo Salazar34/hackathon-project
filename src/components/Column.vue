@@ -1,6 +1,11 @@
 <template>
   <h1 class="text-3xl pb-10">{{ header }}</h1>
-  <img :src="`./src/assets/${imgPath}`" alt="" width="250" />
+  <img
+    class="lg:w-6/12 md:w-full"
+    :src="`./src/assets/${imgPath}`"
+    alt=""
+    width="250"
+  />
   <p class="security-goal">
     {{ text }}
   </p>
@@ -19,6 +24,6 @@ export default {
 
 <style scoped>
 p.security-goal {
-  @apply text-lg py-10 text-justify w-96;
+  @apply lg:text-lg py-10 text-justify lg:w-96 w-9/12 leading-relaxed;
 }
 </style>
