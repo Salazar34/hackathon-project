@@ -53,7 +53,7 @@
           of infringement or crime to the authorities, actively contributing to
           the project.
         </p>
-        <Button text="Learn more about Eagle 360" destination="city-security" />
+        <Button text="Learn more about Eagle 360" destination="contribute" />
       </div>
     </div>
   </div>
