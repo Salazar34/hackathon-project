@@ -21,7 +21,7 @@ export default {
         <div class="flex">
           <div>
             <router-link to="/" class="flex items-center py-4 px-2">
-              <span class="text-3xl uppercase">Sus-Landia</span>
+              <span class="text-3xl uppercase">Las-City</span>
             </router-link>
           </div>
           <div class="hidden flex px-20 gap-5 md:flex items-center space-x-7">

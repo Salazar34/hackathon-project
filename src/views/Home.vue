@@ -1,8 +1,18 @@
 <template>
-  
+  <Navbar/>
+  <p></p>
+
 </template>
 
 <script>
+import Navbar from "../components/Navbar.vue"
+export default {
+    name: "Municipality", 
+    components: {
+        Navbar
+    }
+}
+
 </script>
 
 <style>
