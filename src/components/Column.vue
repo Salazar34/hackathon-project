@@ -24,6 +24,7 @@ export default {
 
 <style scoped>
 p.security-goal {
-  @apply lg:text-lg py-10 text-justify lg:w-96 w-9/12 leading-relaxed;
+  @apply py-10 text-justify lg:w-96 w-9/12 leading-relaxed;
+  font-size: 17px;
 }
 </style>
