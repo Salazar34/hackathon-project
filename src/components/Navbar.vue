@@ -21,7 +21,11 @@ export default {
         <div class="flex">
           <div>
             <router-link to="/" class="flex items-center py-4 px-2">
+<<<<<<< HEAD
               <span class="text-3xl uppercase">Basso City</span>
+=======
+              <span class="text-3xl uppercase">basso</span>
+>>>>>>> b31c6ade4a93298a4af8e30609356e30c596f9ec
             </router-link>
           </div>
           <div class="hidden flex px-20 gap-5 md:flex items-center space-x-7">
@@ -36,6 +40,13 @@ export default {
             <router-link class="nav-link" to="/contribute"
               >Contribute</router-link
             >
+            <router-link to="/">
+              <img
+                src="../assets/italian-flag.png"
+                alt="Italian flag"
+                width="40"
+              />
+            </router-link>
           </div>
         </div>
         <div class="md:hidden flex items-center">
@@ -79,6 +90,11 @@ export default {
             >Contribute</router-link
           >
         </li>
+        <li>
+          <router-link to="/">
+            <img src="../assets/italian-flag.png" alt="Italian flag" />
+          </router-link>
+        </li>
       </ul>
     </div>
   </nav>
@@ -86,6 +102,25 @@ export default {
 
 <style scoped>
 a.nav-link {
-  @apply flex items-center text-lg transition ease-in-out hover:text-indigo-400 duration-500;
+  @apply flex items-center text-lg transition ease-in-out hover:text-indigo-400 duration-500 relative;
+}
+
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  @apply bg-indigo-500;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+a.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 </style>
