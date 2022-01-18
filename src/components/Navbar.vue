@@ -21,7 +21,7 @@ export default {
         <div class="flex">
           <div>
             <router-link to="/" class="flex items-center py-4 px-2">
-              <span class="text-3xl uppercase">Basso City</span>
+              <span class="nav-brand text-3xl uppercase">Basso City</span>
             </router-link>
           </div>
           <div class="hidden flex px-20 gap-5 md:flex items-center space-x-7">
@@ -101,7 +101,12 @@ a.nav-link {
   @apply flex items-center text-lg transition ease-in-out hover:text-indigo-400 duration-500 relative;
 }
 
-a.nav-link::after {
+.nav-brand {
+  @apply relative;
+}
+
+a.nav-link::after,
+.nav-brand::after {
   content: "";
   position: absolute;
   left: 0;
@@ -115,7 +120,8 @@ a.nav-link::after {
   transition: transform 250ms ease-in;
 }
 
-a.nav-link:hover::after {
+a.nav-link:hover::after,
+.nav-brand:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
