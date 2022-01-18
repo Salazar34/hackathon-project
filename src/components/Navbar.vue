@@ -21,11 +21,7 @@ export default {
         <div class="flex">
           <div>
             <router-link to="/" class="flex items-center py-4 px-2">
-<<<<<<< HEAD
               <span class="text-3xl uppercase">Basso City</span>
-=======
-              <span class="text-3xl uppercase">basso</span>
->>>>>>> b31c6ade4a93298a4af8e30609356e30c596f9ec
             </router-link>
           </div>
           <div class="hidden flex px-20 gap-5 md:flex items-center space-x-7">
