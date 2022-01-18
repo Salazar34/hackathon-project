@@ -1,7 +1,7 @@
 <template>
   <footer class="py-10">
     <div class="container mx-auto flex flex-row justify-between space-x-96">
-      <h2 class="text-4xl font-bold">SUS-LANDIA</h2>
+      <h2 class="text-4xl font-bold">Basso City</h2>
       <div class="links flex flex-col gap-2">
         <h1 class="font-bold">Useful Links</h1>
         <router-link to="/">Home</router-link>
