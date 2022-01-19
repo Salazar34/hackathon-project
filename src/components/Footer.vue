@@ -9,6 +9,7 @@
         <router-link to="/municipality">Municipality</router-link>
         <router-link to="/city-security">City Security</router-link>
         <router-link to="/contribute">Contribute</router-link>
+        <router-link to="/credits">Credits</router-link>
       </div>
     </div>
   </footer>

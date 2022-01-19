@@ -5,6 +5,7 @@ import CitySecurity from "../views/CitySecurity.vue";
 import Contribute from "../views/Contribute.vue";
 import Goals from "../views/Goals.vue";
 import Municipality from "../views/Municipality.vue";
+import Credits from "../views/Credits.vue"
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: "/goals",
     name: "Goals",
     component: Goals,
+  },
+  {
+    path: "/credits",
+    name: "Credits",
+    component: Credits,
   },
 ];
 

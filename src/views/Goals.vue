@@ -26,7 +26,7 @@
         <img
           class="py-5"
           src="../assets/planet-earth.png"
-          alt="Planert heart"
+          alt="Planet earth"
           width="100"
         />
         <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">

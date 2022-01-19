@@ -1,6 +1,10 @@
 Town Hall-<a href="https://www.flaticon.com/free-icons/hall" title="hall icons">Hall icons created by Smashicons - Flaticon</a>
 
-<a href="https://www.flaticon.com/free-icons/x" title="x icons">X icons created by Stockio - Flaticon</a>
+
 Temp-<a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons">Pokemon icons created by Roundicons Freebies - Flaticon</a>
 
-<a href="https://www.flaticon.com/free-icons/moon-festival" title="moon festival icons">Moon festival icons created by Flat Icons - Flaticon</a>
+moon festival-<a href="https://www.flaticon.com/free-icons/moon-festival" title="moon festival icons">Moon festival icons created by Flat Icons - Flaticon</a>
+
+virtual-<a href="https://www.flaticon.com/free-icons/digital" title="digital icons">Digital icons created by Freepik - Flaticon</a>
+Bridge-<a href="https://www.flaticon.com/free-icons/tower-bridge" title="Tower bridge icons">Tower bridge icons created by Freepik - Flaticon</a>
+Machine Learning-<a href="https://www.flaticon.com/free-icons/machine-learning" title="machine learning icons">Machine learning icons created by Flat Icons - Flaticon</a>
