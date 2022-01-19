@@ -4,6 +4,7 @@ body {
   font-family: "Exo 2", cursive !important;
   background-color: #19243f;
   color: #ffffff;
+  min-height: 100vh;
 }
 
 @tailwind base;

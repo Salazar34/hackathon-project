@@ -27,7 +27,7 @@
     </p>
 
     <div
-      class="grid lg:grid-cols-3 lg:gap-40 gap-10 pt-40 lg:shrink md:shrink-0"
+      class="grid lg:grid-cols-3 lg:gap-10 gap-10 pt-40 lg:shrink md:shrink-0"
     >
       <div class="container flex flex-col items-center">
         <Column

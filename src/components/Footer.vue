@@ -1,9 +1,14 @@
 <template>
   <footer class="py-10">
-    <div class="container mx-auto flex flex-row justify-between space-x-96">
-      <h2 class="text-4xl font-bold">Basso City</h2>
+    <div
+      class="container mx-auto flex lg:flex-row flex-col items-center justify-center lg:space-x-96 lg:text-left text-center"
+    >
+      <div class="flex-col">
+        <!-- <h2 class="text-4xl font-bold">BASSO City</h2> -->
+        <img class="" src="../assets/Temp.png" alt="Temp logo" width="200" />
+      </div>
       <div class="links flex flex-col gap-2">
-        <h1 class="font-bold">Useful Links</h1>
+        <h1 class="font-bold pt-10">Useful Links</h1>
         <router-link to="/">Home</router-link>
         <router-link to="/goals">Goals</router-link>
         <router-link to="/municipality">Municipality</router-link>
@@ -26,7 +31,7 @@ footer {
   background-color: #141a2c;
 }
 h1 {
-  @apply text-2xl mr-40;
+  @apply text-2xl;
 }
 a {
   @apply transition ease-in-out hover:text-indigo-400 duration-500;

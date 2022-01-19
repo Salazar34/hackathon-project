@@ -1,89 +1,51 @@
 <template>
   <Navbar />
-  <div class="grid lg:grid-cols-3 lg:gap-10 gap-10 place-items-center pt-20 lg:pb-10">
-    <div class="card container flex flex-col items-center justify-center">
-      <a href="https://www.flaticon.com/free-icons/hall" title="hall icons">
-        <img
-          class="py-5"
-          src="../assets/hall.png"
-          alt="Planet earth"
-          width="100"
-        />
-      </a>
-        <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">
-        Hall icons created by Smashicons - Flaticon
-        </p>   
-    </div>
-        <div class="card container flex flex-col items-center justify-center">
-        <a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons">
-        <img
-          class="py-5"
-          src="../assets/Temp.png"
-          alt="Planet earth"
-          width="100"
-        />
-        </a>
-        <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">
-        Pokemon icons created by Roundicons Freebies - Flaticon
-        </p>   
-    </div>
-        <div class="card container flex flex-col items-center justify-center">
-        <a href="https://www.flaticon.com/free-icons/moon-festival" title="moon festival icons">
-        <img
-          class="py-5"
-          src="../assets/moon-festival.png"
-          alt="Planet earth"
-          width="100"
-        />
-        </a>
-        <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">
-        Moon festival icons created by Flat Icons - Flaticon
-        </p>   
-    </div>
-        <div class="card container flex flex-col items-center justify-center">
-        <a href="https://www.flaticon.com/free-icons/digital" title="digital icons">
-        <img
-          class="py-5"
-          src="../assets/virtual.png"
-          alt="Planet earth"
-          width="100"
-        />
-        </a>
-        <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">
-        Digital icons created by Freepik - Flaticon
-        </p>   
-    </div>
-        <div class="card container flex flex-col items-center justify-center">
-        <a href="https://www.flaticon.com/free-icons/tower-bridge" title="Tower bridge icons">
-        <img
-          class="py-5"
-          src="../assets/bridge.png"
-          alt="Planet earth"
-          width="100"
-        />
-        </a>
-        <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">
-        Tower bridge icons created by Freepik - Flaticon
-        </p>   
-    </div>
-        <div class="card container flex flex-col items-center justify-center">
-          <a href="https://www.flaticon.com/free-icons/machine-learning" title="machine learning icons">
-        <img
-          class="py-5"
-          src="../assets/machine-learning.png"
-          alt="Planet earth"
-          width="100"
-        />
-          </a>
-        <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">
-        Machine learning icons created by Flat Icons - Flaticon
-        </p>   
-    </div>
+  <h1 class="uppercase lg:text-5xl text-2xl mx-auto text-center pt-20">
+    Images and Icons attributions
+  </h1>
+  <div class="grid lg:grid-cols-3 place-items-center lg:pb-10 mx-auto">
+    <Card
+      link="Hall icons created by Smashicons - Flaticon"
+      text="Hall icons created by Smashicons - Flaticon"
+      imgAlt="Hall vector representation"
+      imgName="hall.png"
+    />
+    <Card
+      link="https://www.flaticon.com/free-icons/moon-festival"
+      text="Pokemon icons created by Roundicons Freebies - Flaticon"
+      imgAlt="Temp logo"
+      imgName="Temp.png"
+    />
+    <Card
+      link="https://www.flaticon.com/free-icons/moon-festival"
+      text="Moon festival icons created by Flat Icons - Flaticon"
+      imgAlt="Moon vector representation"
+      imgName="moon-festival.png"
+    />
+    <Card
+      link="https://www.flaticon.com/free-icons/digital"
+      text="Digital icons created by Freepik - Flaticon"
+      imgAlt="Digital vector representation"
+      imgName="virtual.png"
+    />
+    <Card
+      link="https://www.flaticon.com/free-icons/tower-bridge"
+      text="Tower bridge icons created by Freepik - Flaticon"
+      imgAlt="Bridge vector representation"
+      imgName="bridge.png"
+    />
+    <Card
+      link="https://www.flaticon.com/free-icons/machine-learning"
+      text="Machine learning icons created by Flat Icons - Flaticon"
+      imgAlt="Machine learning vector representation"
+      imgName="machine-learning.png"
+    />
   </div>
   <Footer />
 </template>
 
 <script>
+import Card from "../components/Card.vue";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import Button from "../components/Button.vue";
@@ -94,6 +56,7 @@ export default {
     Navbar,
     Footer,
     Button,
+    Card,
   },
 };
 </script>

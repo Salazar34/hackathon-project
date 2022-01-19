@@ -45,7 +45,7 @@ export default {
             </router-link>
           </div>
         </div>
-        <div class="md:hidden flex items-center">
+        <div class="lg:hidden flex items-center">
           <button class="outline-none mobile-menu-button" @click="onClick()">
             <svg
               class="w-6 h-6 text-gray-500 hover:text-indigo-500"
@@ -64,7 +64,7 @@ export default {
       </div>
     </div>
     <div class="hidden mobile-menu">
-      <ul class="flex flex-col items-center">
+      <ul class="flex flex-col items-center justify-center">
         <li class="active">
           <router-link class="nav-link" to="/">Home</router-link>
         </li>
@@ -88,7 +88,11 @@ export default {
         </li>
         <li>
           <router-link to="/">
-            <img src="../assets/italian-flag.png" alt="Italian flag" />
+            <img
+              class="w-2/3"
+              src="../assets/italian-flag.png"
+              alt="Italian flag"
+            />
           </router-link>
         </li>
       </ul>

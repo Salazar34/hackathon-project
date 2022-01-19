@@ -1,16 +1,21 @@
 <template>
   <Navbar />
-  <div class="container flex flex-col items-center py-20 font-bold">
+  <div class="container flex flex-col items-center py-20 font-bold mx-auto">
     <h1 class="uppercase text-3xl">Our Mission</h1>
-    <div class="flex flex-row justify-between gap-40 pt-10">
-      <img src="../assets/Temp.png" alt="Temp" width="250" />
+    <div class="flex lg:flex-row justify-between gap-40 pt-10">
+      <img
+        class="hidden lg:block"
+        src="../assets/Temp.png"
+        alt="Temp"
+        width="250"
+      />
       <img
         src="../assets/global-goals.png"
         alt="Global Goals Logo"
         width="250"
       />
     </div>
-    <p class="lg:w-1/2 text-justify leading-relaxed pt-10">
+    <p class="lg:max-w-prose w-3/4 text-justify leading-relaxed pt-10">
       The goal of our project is the improvement of qol and the conditions of
       our planet to ensure the best possible future for all future generations.
       For this reason, our goal is to build the best possible city by meeting
@@ -20,7 +25,9 @@
     </p>
     <p class="font-bold pt-10 pb-5 text-2xl">Have some nice ideas?</p>
     <Button text="Let us know here" destination="contribute" />
-    <div class="grid lg:grid-cols-3 lg:gap-0 gap-10 place-items-center pt-20">
+    <div
+      class="grid lg:grid-cols-3 lg:gap-0 gap-10 lg:place-items-center pt-20"
+    >
       <div class="card container flex flex-col items-center justify-center">
         <h1 class="uppercase text-xl">sustainability</h1>
         <img
@@ -35,7 +42,9 @@
           hurting our precious planet.
         </p>
       </div>
-      <div class="card container flex flex-col items-center justify-center">
+      <div
+        class="card container flex flex-col max-w-screen-md items-center justify-center"
+      >
         <h1 class="uppercase text-xl">modernity</h1>
         <img
           class="py-5"
