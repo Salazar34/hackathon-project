@@ -40,6 +40,56 @@
       imgAlt="Machine learning vector representation"
       imgName="machine-learning.png"
     />
+    <Card 
+      link="https://www.flaticon.com/free-icons/business-and-finance"
+      text="Business and finance icons created by Freepik - Flaticon"
+      imgAlt="City security vector"
+      imgName="city-security.png"
+    />
+    <Card 
+      link="https://www.flaticon.com/free-icons/credit-card"
+      text="Credit card icons created by Freepik - Flaticon"
+      imgAlt="Credit card vector"
+      imgName="credit-card.png"
+    />
+    <Card 
+      link="https://www.flaticon.com/free-icons/deforestation"
+      text="Deforestation icons created by Freepik - Flaticon"
+      imgAlt="Deforestation vector representation"
+      imgName="deforestation.png"
+    />
+    <Card 
+      link="https://www.flaticon.com/free-icons/eagle"
+      text="Eagle icons created by Freepik - Flaticon"
+      imgAlt="Eagle vector"
+      imgName="eagle.png"
+    />
+    <Card 
+      link="https://www.flaticon.com/free-icons/modern-architecture"
+      text="Modern architecture icons created by Freepik - Flaticon"
+      imgAlt="Modern architecture vector"
+      imgName="modern-architecture.png"
+    />
+    <Card 
+      link="https://www.flaticon.com/free-icons/environment"
+      text="Environment icons created by Freepik - Flaticon"
+      imgAlt="Earth planet vector"
+      imgName="planet-earth.png"
+    />
+  </div>
+  <div class="container mx-auto flex flex-row items-center justify-center text-center">
+    <Card 
+      link="https://www.flaticon.com/free-icons/police"
+      text="Police icons created by Freepik - Flaticon"
+      imgAlt="Police officer vector"
+      imgName="police.png"
+    />
+    <Card 
+      link="https://www.flaticon.com/free-icons/collaboration"
+      text="Collaboration icons created by Freepik - Flaticon"
+      imgAlt="Community vector"
+      imgName="teamwork.png"
+    />
   </div>
   <Footer />
 </template>
