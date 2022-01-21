@@ -99,7 +99,7 @@
         />
         <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">
           In order to don't let our world down we'll have some kinda initiave to
-          figth all the circumstances that are dangerous for our planet lives,
+          figth all the circumstances that are dangerous for our planet life,
           like deforestation.
         </p>
       </div>

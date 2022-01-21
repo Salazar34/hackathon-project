@@ -25,21 +25,21 @@ export default {
             </router-link>
           </div>
           <div class="hidden flex px-20 gap-5 md:flex items-center space-x-7">
-            <router-link class="nav-link" to="/">Home</router-link>
-            <router-link class="nav-link" to="/goals">Obbiettivi</router-link>
-            <router-link class="nav-link" to="/municipality"
+            <router-link class="nav-link" to="/it/">Home</router-link>
+            <router-link class="nav-link" to="/it/goals">Obbiettivi</router-link>
+            <router-link class="nav-link" to="/it/municipality"
               >Comune</router-link
             >
-            <router-link class="nav-link" to="/city-security"
+            <router-link class="nav-link" to="/it/city-security"
               >Sicurezza In Città</router-link
             >
-            <router-link class="nav-link" to="/contribute"
+            <router-link class="nav-link" to="/it/contribute"
               >Contribuisci</router-link
             >
             <router-link to="/">
               <img
-                src="../assets/italian-flag.png"
-                alt="Italian flag"
+                src="../../assets/uk-flag.png"
+                alt="English Flag"
                 width="40"
               />
             </router-link>
@@ -66,32 +66,32 @@ export default {
     <div class="hidden mobile-menu">
       <ul class="flex flex-col items-center justify-center">
         <li class="active">
-          <router-link class="nav-link" to="/">Home</router-link>
+          <router-link class="nav-link" to="/it">Home</router-link>
         </li>
         <li>
-          <router-link class="nav-link" to="/goals">Obbiettivi</router-link>
+          <router-link class="nav-link" to="/it/goals">Obbiettivi</router-link>
         </li>
         <li>
-          <router-link class="nav-link" to="/municipality"
+          <router-link class="nav-link" to="/it/municipality"
             >Comune</router-link
           >
         </li>
         <li>
-          <router-link class="nav-link" to="/city-security"
+          <router-link class="nav-link" to="/it/city-security"
             >Sicurezza In Città</router-link
           >
         </li>
         <li>
-          <router-link class="nav-link" to="/contribute"
+          <router-link class="nav-link" to="/it/contribute"
             >Contribuisci</router-link
           >
         </li>
         <li>
-          <router-link to="/It">
+          <router-link to="/">
             <img
               class="w-2/3"
-              src="../assets/italian-flag.png"
-              alt="Italian flag"
+              src="../../assets/uk-flag.png"
+              alt="English flag"
             />
           </router-link>
         </li>

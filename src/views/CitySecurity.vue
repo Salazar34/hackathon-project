@@ -49,7 +49,6 @@
           imgPath="eagle.png"
           text="Eagle 360 is an advanced city monitoring system that allows city authorities to monitor comfortably and safely in every corner of the city. Citizens, by downloading an app, will be able to report any kind of infringement or crime to the authorities, actively contributing to the project. "
         />
-        <Button text="Learn more about Eagle 360" destination="contribute" />
       </div>
     </div>
   </div>

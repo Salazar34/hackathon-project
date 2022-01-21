@@ -5,7 +5,15 @@ import CitySecurity from "../views/CitySecurity.vue";
 import Contribute from "../views/Contribute.vue";
 import Goals from "../views/Goals.vue";
 import Municipality from "../views/Municipality.vue";
-import Credits from "../views/Credits.vue"
+import Credits from "../views/Credits.vue";
+import HomeIt from "../views/It/Home-it.vue";
+import CitySecurityIt from "../views/It/CitySecurity-it.vue";
+import ContributeIt from "../views/It/Contribute-it.vue";
+import GoalsIt from "../views/It/Goals-it.vue";
+import MunicipalityIt from "../views/It/Municipality-it.vue";
+import CreditsIt from "../views/It/Credits-it.vue";
+
+
 
 const routes = [
   {
@@ -37,6 +45,36 @@ const routes = [
     path: "/credits",
     name: "Credits",
     component: Credits,
+  },
+  {
+    path: "/it",
+    name: "HomeIt",
+    component: HomeIt,
+  },
+  {
+    path: "/it/city-security",
+    name: "CitySecurityIt",
+    component: CitySecurityIt,
+  },
+  {
+    path: "/it/contribute",
+    name: "ContributeIt",
+    component: ContributeIt,
+  },
+  {
+    path: "/it/municipality",
+    name: "MunicipalityIt",
+    component: MunicipalityIt,
+  },
+  {
+    path: "/it/goals",
+    name: "GoalsIt",
+    component: GoalsIt,
+  },
+  {
+    path: "/it/credits",
+    name: "CreditsIt",
+    component: CreditsIt,
   },
 ];
 

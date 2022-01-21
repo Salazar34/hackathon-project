@@ -1,15 +1,18 @@
 <template>
-  
+  <Navbar/>
+  <p></p>
+
 </template>
 
 <script>
-import NavbarIt from ".../components/comoponents-it/Navbar-it.vue"
+import Navbar from "../../components/components-it/Navbar-it.vue"
 export default {
-    name: "Home",
-    components:{
-        NavbarIt,
+    name: "HomeIt", 
+    components: {
+        Navbar
     }
 }
+
 </script>
 
 <style>

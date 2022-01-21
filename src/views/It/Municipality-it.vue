@@ -1,8 +1,8 @@
 <template>
-  <Navbar />
+  <NavbarIt/>
   <div class="container flex flex-col items-center py-20 font-bold mx-auto">
     <h1 class="uppercase text-3xl">Un nuovo modo per vivere la città</h1>
-    <img src="../assets/hall.png" alt="Town Hall" width="250" class="py-10" />
+    <img src="../../assets/hall.png" alt="Town Hall" width="250" class="py-10" />
     <p class="lg:w-1/2 text-justify leading-relaxed">
       Per migliorare la vivibilità della nostra città, abbiamo pensato ad alcune
       idee che possano in qualche modo migliorare la qualità di vita. Uno dei maggiori problemi presenti è la riduzione e semplificazione della burocrazia, in cui si potrebbe digitalizzare ogni pratica. Un'altra delle nostre idee era un nuovo metodo di spostamento all'interno della città, offrendo ai cittadini delle auto prenotabili e condivise per ridurre l'inquinamento e lo spreco di carburante.
@@ -12,7 +12,7 @@
         <h1 class="uppercase text-xl">Digitalizzazione</h1>
         <img
           class="py-5"
-          src="../assets/virtual.png"
+          src="../../assets/virtual.png"
           alt="Digitalization"
           width="100"
         />
@@ -26,7 +26,7 @@
         <h1 class="uppercase text-xl">Miglioramento delle infrastrutture</h1>
         <img
           class="py-5"
-          src="../assets/bridge.png"
+          src="../../assets/bridge.png"
           alt="Digitalization"
           width="100"
         />
@@ -39,7 +39,7 @@
         <h1 class="uppercase text-xl">Insegnamento innovativo</h1>
         <img
           class="py-5"
-          src="../assets/Machine-Learning.png"
+          src="../../assets/Machine-Learning.png"
           alt="Digitalization"
           width="100"
         />
@@ -50,13 +50,13 @@
       </div>
     </div>
   </div>
-  <Footer />
+  <FooterIt/>
 </template>
 
 <script>
-import NavbarIt from "../components/components-it/Navbar-it.vue";
-import FooterIt from "../components/components-it/Footer-it.vue";
-import Button from "../components/Button.vue";
+import NavbarIt from "../../components/components-it/Navbar-it.vue";
+import FooterIt from "../../components/components-it/Footer-it.vue";
+import Button from "../../components/Button.vue";
 export default {
   name: "Comune",
   components: {

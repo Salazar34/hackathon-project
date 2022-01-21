@@ -36,7 +36,7 @@ export default {
             <router-link class="nav-link" to="/contribute"
               >Contribute</router-link
             >
-            <router-link to="/">
+            <router-link to="/it">
               <img
                 src="../assets/italian-flag.png"
                 alt="Italian flag"
@@ -87,7 +87,7 @@ export default {
           >
         </li>
         <li>
-          <router-link to="/">
+          <router-link to="/it">
             <img
               class="w-2/3"
               src="../assets/italian-flag.png"
