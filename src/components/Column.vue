@@ -2,7 +2,7 @@
   <h1 class="text-3xl pb-10">{{ header }}</h1>
   <img
     class="lg:w-6/12 md:w-full"
-    :src="`./src/assets/${imgPath}`"
+    :src="`../src/assets/${imgPath}`"
     alt=""
     width="250"
   />
