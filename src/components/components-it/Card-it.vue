@@ -23,6 +23,7 @@ export default {
     imgName: String,
     imgAlt: String,
     text: String,
+    image: Object,
   },
 };
 </script>

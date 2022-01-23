@@ -26,7 +26,9 @@ export default {
           </div>
           <div class="hidden flex px-20 gap-5 md:flex items-center space-x-7">
             <router-link class="nav-link" to="/it/">Home</router-link>
-            <router-link class="nav-link" to="/it/goals">Obbiettivi</router-link>
+            <router-link class="nav-link" to="/it/goals"
+              >Obbiettivi</router-link
+            >
             <router-link class="nav-link" to="/it/municipality"
               >Comune</router-link
             >
@@ -89,7 +91,7 @@ export default {
         <li>
           <router-link to="/">
             <img
-              class="w-2/3"
+              class="lg:w-2/3 w-1/2"
               src="../../assets/uk-flag.png"
               alt="English flag"
             />

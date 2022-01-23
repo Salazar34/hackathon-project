@@ -35,26 +35,12 @@
     <div
       class="grid lg:grid-cols-3 lg:gap-10 gap-10 pt-40 lg:shrink md:shrink-0"
     >
-      <div class="container flex flex-col items-center">
-        <Column
-          header="Buonus buona condotta"
-          imgPath="credit-card.png"
-          text="La buona condotta dei cittadini sarà ricompensta con crediti città, utilizzabili dai cittadini in persona nei negozi e/o nei supermercati. Tali crediti potranno anche essere inclusi nel Curriculum Vitae (C.V.) o usati per dimostrare la tua contribuzione sociale e civica alla tua scuola o università."
-        />
-      </div>
-      <div class="container flex flex-col items-center">
-        <Column
-          header="Corpo di sorveglianza"
-          imgPath="police.png"
-          text="Il corpo di sorveglianza cittadino è composto da poliziotti qualificati e specialmente addestrati per assicurare la massima sicurezza ovunque in città. Tutti i poliziotti saranno periocamente riaddestrati con nuovi corsi per imparare nuove tecniche e pratiche."
-        />
-      </div>
-      <div class="container flex flex-col items-center">
-        <Column
-          header="Eagle 360"
-          imgPath="eagle.png"
-          text="Eagle 360 è un avanzato sistema di monitoraggio della città che permette alle autorità di vigilare in maniera confortabile e sicura in ogni angolo della città. I cittadini, scaricando un'applicazione potranno segnalare ogni tipo di violezione o crimine alle aurotità, attivamente per contribuire al progetto."
-        />
+      <div
+        class="container flex flex-col items-center"
+        v-for="column in columns"
+        v-bind:key="column.id"
+      >
+        <Column :image="column" :header="column.header" :text="column.text" />
       </div>
     </div>
   </div>
@@ -67,6 +53,10 @@ import FooterIt from "../../components/components-it/Footer-it.vue";
 import Button from "../../components/Button.vue";
 import Column from "../../components/Column.vue";
 
+import creditCard from "../../assets/credit-card.png";
+import police from "../../assets/police.png";
+import eagle from "../../assets/eagle.png";
+
 export default {
   name: "CitySecurity",
   components: {
@@ -74,6 +64,30 @@ export default {
     FooterIt,
     Button,
     Column,
+  },
+  data: function () {
+    return {
+      columns: [
+        {
+          id: "1",
+          header: "Bonus buona condotta",
+          text: "La buona condotta dei cittadini sarà ricompensta con crediti città, utilizzabili dai cittadini in persona nei negozi e/o nei supermercati. Tali crediti potranno anche essere inclusi nel Curriculum Vitae (C.V.) o usati per dimostrare la tua contribuzione sociale e civica alla tua scuola o università.",
+          image: creditCard,
+        },
+        {
+          id: "2",
+          header: "Corpo di sorveglianza",
+          text: "Il corpo di sorveglianza cittadino è composto da poliziotti qualificati e specialmente addestrati per assicurare la massima sicurezza ovunque in città. Tutti i poliziotti saranno periocamente riaddestrati con nuovi corsi per imparare nuove tecniche e pratiche.",
+          image: police,
+        },
+        {
+          id: "3",
+          header: "Eagle 360",
+          text: "Eagle 360 è un avanzato sistema di monitoraggio della città che permette alle autorità di vigilare in maniera confortabile e sicura in ogni angolo della città. I cittadini, scaricando un'applicazione potranno segnalare ogni tipo di violezione o crimine alle aurotità, attivamente per contribuire al progetto.",
+          image: eagle,
+        },
+      ],
+    };
   },
 };
 </script>
