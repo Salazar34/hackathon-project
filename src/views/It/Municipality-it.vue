@@ -50,7 +50,7 @@
         <h1 class="uppercase text-xl">Insegnamento innovativo</h1>
         <img
           class="py-5"
-          src="../../assets/Machine-Learning.png"
+          src="../../assets/machine-learning.png"
           alt="Digitalization"
           width="100"
         />

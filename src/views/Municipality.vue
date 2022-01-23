@@ -45,7 +45,7 @@
         <h1 class="uppercase text-xl">Innovative Learning</h1>
         <img
           class="py-5"
-          src="../assets/Machine-Learning.png"
+          src="../assets/machine-learning.png"
           alt="Digitalization"
           width="100"
         />
@@ -64,6 +64,7 @@
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import Button from "../components/Button.vue";
+
 export default {
   name: "Municipality",
   components: {
