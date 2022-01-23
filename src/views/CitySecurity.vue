@@ -29,26 +29,12 @@
     <div
       class="grid lg:grid-cols-3 lg:gap-10 gap-10 pt-40 lg:shrink md:shrink-0"
     >
-      <div class="container flex flex-col items-center">
-        <Column
-          header="Good behavior bonus"
-          imgPath="credit-card.png"
-          text="The good conduct of citizens will be rewarded with city credits, usable by the citizens themselves in shops and/ or supermarkets. These credits can be included in your Curriculum Vitae (C.V.) or presented to your school or university to demonstrate your social and civic contribution. "
-        />
-      </div>
-      <div class="container flex flex-col items-center">
-        <Column
-          header="City surveillance body"
-          imgPath="police.png"
-          text="The city’s surveillance corps is made up of qualified and specially trained police officers to ensure maximum security within the city. All police officers will be trained periodically with refresher courses in which new techniques and practices will be shown to ensure maximum safety."
-        />
-      </div>
-      <div class="container flex flex-col items-center">
-        <Column
-          header="Eagle 360"
-          imgPath="eagle.png"
-          text="Eagle 360 is an advanced city monitoring system that allows city authorities to monitor comfortably and safely in every corner of the city. Citizens, by downloading an app, will be able to report any kind of infringement or crime to the authorities, actively contributing to the project. "
-        />
+      <div
+        v-for="column in columns"
+        v-bind:key="column.id"
+        class="container flex flex-col items-center justify-center"
+      >
+        <Column :image="column" :header="column.header" :text="column.text" />
       </div>
     </div>
   </div>
@@ -61,6 +47,10 @@ import Footer from "../components/Footer.vue";
 import Button from "../components/Button.vue";
 import Column from "../components/Column.vue";
 
+import creditCard from "../assets/credit-card.png";
+import police from "../assets/police.png";
+import eagle from "../assets/eagle.png";
+
 export default {
   name: "CitySecurity",
   components: {
@@ -68,6 +58,30 @@ export default {
     Footer,
     Button,
     Column,
+  },
+  data: function () {
+    return {
+      columns: [
+        {
+          id: "1",
+          header: "Good behavior bonus",
+          text: "The good conduct of citizens will be rewarded with city credits, usable by the citizens themselves in shops and/ or supermarkets. These credits can be included in your Curriculum Vitae (C.V.) or presented to your school or university to demonstrate your social and civic contribution. ",
+          image: creditCard,
+        },
+        {
+          id: "2",
+          header: "City surveillance body",
+          text: "The city’s surveillance corps is made up of qualified and specially trained police officers to ensure maximum security within the city. All police officers will be trained periodically with refresher courses in which new techniques and practices will be shown to ensure maximum safety.",
+          image: police,
+        },
+        {
+          id: "3",
+          header: "Eagle 360",
+          text: "Eagle 360 is an advanced city monitoring system that allows city authorities to monitor comfortably and safely in every corner of the city. Citizens, by downloading an app, will be able to report any kind of infringement or crime to the authorities, actively contributing to the project. ",
+          image: eagle,
+        },
+      ],
+    };
   },
 };
 </script>

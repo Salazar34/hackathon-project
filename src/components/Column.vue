@@ -1,11 +1,6 @@
 <template>
   <h1 class="text-3xl pb-10">{{ header }}</h1>
-  <img
-    class="lg:w-6/12 md:w-full"
-    :src="`../src/assets/${imgPath}`"
-    alt=""
-    width="250"
-  />
+  <img class="lg:w-6/12 md:w-full" :src="image.image" alt="" width="250" />
   <p class="security-goal">
     {{ text }}
   </p>
@@ -18,6 +13,7 @@ export default {
     header: String,
     imgPath: String,
     text: String,
+    image: Object,
   },
 };
 </script>

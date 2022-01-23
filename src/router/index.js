@@ -1,19 +1,20 @@
 import { createRouter, createWebHistory } from "vue-router";
 
+//Default components
 import Home from "../views/Home.vue";
 import CitySecurity from "../views/CitySecurity.vue";
 import Contribute from "../views/Contribute.vue";
 import Goals from "../views/Goals.vue";
 import Municipality from "../views/Municipality.vue";
 import Credits from "../views/Credits.vue";
+
+//Italian components
 import HomeIt from "../views/It/Home-it.vue";
 import CitySecurityIt from "../views/It/CitySecurity-it.vue";
 import ContributeIt from "../views/It/Contribute-it.vue";
 import GoalsIt from "../views/It/Goals-it.vue";
 import MunicipalityIt from "../views/It/Municipality-it.vue";
 import CreditsIt from "../views/It/Credits-it.vue";
-
-
 
 const routes = [
   {

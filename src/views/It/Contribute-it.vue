@@ -1,5 +1,5 @@
 <template>
-  <NavbarIt/>
+  <NavbarIt />
   <div
     class="container py-12 mx-auto flex flex-col items-center justify-center"
   >
@@ -60,7 +60,7 @@
       Invia
     </button>
   </div>
-  <FooterIt/>
+  <FooterIt />
 </template>
 
 <script>
@@ -76,6 +76,7 @@ export default {
     FooterIt,
   },
 };
-</script>/components-it
+</script>
+/components-it
 
 <style scoped></style>

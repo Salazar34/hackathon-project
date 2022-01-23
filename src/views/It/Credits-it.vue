@@ -1,5 +1,5 @@
 <template>
-  <NavbarIt/>
+  <NavbarIt />
   <h1 class="uppercase lg:text-5xl text-2xl mx-auto text-center pt-20">
     Attribuzioni per immagini e icone
   </h1>
@@ -40,58 +40,60 @@
       imgAlt="Machine learning vector representation"
       imgName="machine-learning.png"
     />
-    <CardIt 
+    <CardIt
       link="https://www.flaticon.com/free-icons/business-and-finance"
       text="Business and finance icons created by Freepik - Flaticon"
       imgAlt="City security vector"
       imgName="city-security.png"
     />
-    <CardIt 
+    <CardIt
       link="https://www.flaticon.com/free-icons/credit-card"
       text="Credit card icons created by Freepik - Flaticon"
       imgAlt="Credit card vector"
       imgName="credit-card.png"
     />
-    <CardIt 
+    <CardIt
       link="https://www.flaticon.com/free-icons/deforestation"
       text="Deforestation icons created by Freepik - Flaticon"
       imgAlt="Deforestation vector representation"
       imgName="deforestation.png"
     />
-    <CardIt 
+    <CardIt
       link="https://www.flaticon.com/free-icons/eagle"
       text="Eagle icons created by Freepik - Flaticon"
       imgAlt="Eagle vector"
       imgName="eagle.png"
     />
-    <CardIt 
+    <CardIt
       link="https://www.flaticon.com/free-icons/modern-architecture"
       text="Modern architecture icons created by Freepik - Flaticon"
       imgAlt="Modern architecture vector"
       imgName="modern-architecture.png"
     />
-    <CardIt 
+    <CardIt
       link="https://www.flaticon.com/free-icons/environment"
       text="Environment icons created by Freepik - Flaticon"
       imgAlt="Earth planet vector"
       imgName="planet-earth.png"
     />
   </div>
-  <div class="container mx-auto flex flex-row items-center justify-center text-center">
-    <CardIt 
+  <div
+    class="container mx-auto flex flex-row items-center justify-center text-center"
+  >
+    <CardIt
       link="https://www.flaticon.com/free-icons/police"
       text="Police icons created by Freepik - Flaticon"
       imgAlt="Police officer vector"
       imgName="police.png"
     />
-    <CardIt 
+    <CardIt
       link="https://www.flaticon.com/free-icons/collaboration"
       text="Collaboration icons created by Freepik - Flaticon"
       imgAlt="Community vector"
       imgName="teamwork.png"
     />
   </div>
-  <FooterIt/>
+  <FooterIt />
 </template>
 
 <script>

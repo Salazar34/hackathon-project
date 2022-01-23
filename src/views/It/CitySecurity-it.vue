@@ -4,29 +4,32 @@
     <h1 class="text-5xl lg:text-center text-center">
       La nostra <b>sicurezza in città</b>
     </h1>
-    <img class="py-10" src="../../assets/city-security.png" alt="" width="250" />
+    <img
+      class="py-10"
+      src="../../assets/city-security.png"
+      alt=""
+      width="250"
+    />
     <p
-      class="
-        lg:text-lg lg:w-1/2
-        w-9/12
-        leading-relaxed
-        text-justify
-        leading-relaxed
-      "
+      class="lg:text-lg lg:w-1/2 w-9/12 leading-relaxed text-justify leading-relaxed"
     >
-      La sicurezza delle città è un argomento di grande importanza che è alla base della civiltà e della coesistenza pacifica. E' precisamente per questa ragione che è necessario agire nel minor tempo possibile implementando riforme che che rendano possibile il miglioramento del sistema di sicurezza di ogni città.
+      La sicurezza delle città è un argomento di grande importanza che è alla
+      base della civiltà e della coesistenza pacifica. E' precisamente per
+      questa ragione che è necessario agire nel minor tempo possibile
+      implementando riforme che che rendano possibile il miglioramento del
+      sistema di sicurezza di ogni città.
     </p>
 
     <p
-      class="
-        lg:text-lg lg:w-1/2
-        w-9/12
-        leading-relaxed
-        text-justify
-        leading-relaxed
-      "
+      class="lg:text-lg lg:w-1/2 w-9/12 leading-relaxed text-justify leading-relaxed"
     >
-      <br /> Per questa ragione, è necessario andare oltre alla semplice polizia: anche se necessaria, i poliziotti non sono abbastanza per assicurare la massima sucurezza. Analizzando i crimini correnti nelle città, è emerso che c'è una mancanza di sorveglianza in ogni luogo; Perciò, una solozione effettiva al problema sarebbe incoraggiare i cittadini a farsi avanti, se volontari, per la sicurezza cittadina.
+      <br />
+      Per questa ragione, è necessario andare oltre alla semplice polizia: anche
+      se necessaria, i poliziotti non sono abbastanza per assicurare la massima
+      sucurezza. Analizzando i crimini correnti nelle città, è emerso che c'è
+      una mancanza di sorveglianza in ogni luogo; Perciò, una solozione
+      effettiva al problema sarebbe incoraggiare i cittadini a farsi avanti, se
+      volontari, per la sicurezza cittadina.
     </p>
 
     <div
