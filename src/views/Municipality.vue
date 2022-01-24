@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="container flex flex-col items-center py-20 font-bold mx-auto">
+  <div class="container flex flex-col items-center py-20 mx-auto">
     <h1 class="uppercase text-3xl">A new way to live the City</h1>
     <img src="../assets/hall.png" alt="Town Hall" width="250" class="py-10" />
     <p class="lg:w-1/2 text-justify leading-relaxed">
@@ -21,7 +21,7 @@
           alt="Digitalization"
           width="100"
         />
-        <p class="lg:w-full text-justify lg:w-3/5 lg:leading-relaxed w-3/4">
+        <p class="lg:w-full text-justify lg:w-4/5 lg:leading-relaxed w-3/4">
           Burocracy is so annoying, so we tought about how we can semplify it.
           The Answer is... DIGITALIZATION! Everything's simpler when digital, so
           our city is going to have a system for all of them.
@@ -75,4 +75,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+p {
+  @apply lg:text-lg;
+}
+</style>

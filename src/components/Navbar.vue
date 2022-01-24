@@ -105,12 +105,7 @@ a.nav-link {
   @apply flex items-center text-lg transition ease-in-out hover:text-indigo-400 duration-500 relative;
 }
 
-.nav-brand {
-  @apply relative;
-}
-
-a.nav-link::after,
-.nav-brand::after {
+a.nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -124,8 +119,7 @@ a.nav-link::after,
   transition: transform 250ms ease-in;
 }
 
-a.nav-link:hover::after,
-.nav-brand:hover::after {
+a.nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }

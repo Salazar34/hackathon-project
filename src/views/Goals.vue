@@ -1,7 +1,7 @@
 <template>
   <Navbar />
-  <div class="container flex flex-col items-center py-20 font-bold mx-auto">
-    <h1 class="uppercase text-3xl">Our Mission</h1>
+  <div class="container flex flex-col items-center py-20 mx-auto">
+    <h1 class="uppercase text-3xl font-bold">Our Mission</h1>
     <div class="flex lg:flex-row justify-between gap-40 pt-10">
       <img
         class="hidden lg:block"
@@ -23,7 +23,9 @@
       easily reusable and remodeleable, as well as flexible, innovative and 100%
       sustainable.
     </p>
-    <p class="font-bold pt-10 pb-5 text-2xl">Have some nice ideas?</p>
+    <span class="lg:text-4xl font-bold pt-10 pb-5 text-2xl">
+      Have some nice ideas?
+    </span>
     <Button text="Let us know here" destination="contribute" />
     <div
       class="grid lg:grid-cols-3 lg:gap-0 gap-10 lg:place-items-center pt-20"
@@ -138,4 +140,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+p {
+  @apply lg:text-lg;
+}
+</style>
