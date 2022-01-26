@@ -1,6 +1,11 @@
 <template>
   <h1 class="text-3xl pb-10">{{ header }}</h1>
-  <img class="lg:w-6/12 md:w-full" :src="image.image" alt="" width="250" />
+  <img
+    :class="'column-image lg:w-6/12 md:w-full' + ' ' + (additionalClass || '')"
+    :src="image.image"
+    alt=""
+    width="250"
+  />
   <p class="security-goal">
     {{ text }}
   </p>
@@ -12,6 +17,7 @@ export default {
   props: {
     header: String,
     imgPath: String,
+    additionalClass: String,
     text: String,
     image: Object,
   },

@@ -2,10 +2,10 @@
   <Navbar />
   <div class="container mx-auto py-10">
     <div
-      class="max-w-6xl gap-36 flex flex-row items-center justify-between mx-auto py-20"
+      class="max-w-5xl gap-36 flex flex-row items-center justify-between mx-auto py-20"
     >
       <img src="../assets/Temp.png" alt="" width="300" />
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-7">
         <h1 class="lg:text-6xl">BASSO - A new way to live the city</h1>
         <p class="lg:text-lg">
           The main place in which most industrial activities take place is the
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div
-      class="custom-container-mw flex flex-row items-center justify-between mt-20 mx-auto"
+      class="custom-container-mw flex flex-row items-center justify-between mt-40 mx-auto"
     >
       <div class="flex flex-col">
         <h1 class="lg:text-5xl uppercase text-center mb-10">The problem</h1>
@@ -25,15 +25,43 @@
           polluting vehicles and unsustainable energies. This big problem, thay
           has been undervalued for years, is now surfacing with all the releated
           consequences, i.e.
-          <ul class="list-decimal custom-mw mt-5">
-            <li>Increased mortality related to cardivascular and respiratory diseases</li>
-            <li>Rising global temperatures resulting in melting glaciers and increased natural disasters.</li>
-            <li>Continued extinction of animal species, caused by climate anomalies and/or continued predator migrations.</li>
-            <li>Disruption of natural ecosystems and destruction of animal habitats.</li>
-          </ul>
         </p>
+        <ul class="list-decimal custom-mw mt-5">
+          <li>
+            Increased mortality related to cardivascular and respiratory
+            diseases
+          </li>
+          <li>
+            Rising global temperatures resulting in melting glaciers and
+            increased natural disasters.
+          </li>
+          <li>
+            Continued extinction of animal species, caused by climate anomalies
+            and/or continued predator migrations.
+          </li>
+          <li>
+            Disruption of natural ecosystems and destruction of animal habitats.
+          </li>
+        </ul>
       </div>
       <img src="../assets/pollution.png" alt="Polluted city" width="500" />
+    </div>
+    <h1 class="lg:text-4xl text-center uppercase mt-40">
+      Pollution consequences
+    </h1>
+    <div class="grid lg:grid-cols-2 mt-20">
+      <div
+        v-for="column in columns"
+        v-bind:key="column.id"
+        class="column flex flex-col items-center mb-16"
+      >
+        <Column
+          :header="column.header"
+          :image="column"
+          :text="column.text"
+          :additionalClass="column.imgClass"
+        />
+      </div>
     </div>
   </div>
   <Footer />
@@ -42,23 +70,68 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
+import Column from "../components/Column.vue";
+
+import mortality from "../assets/death.png";
+import temperature from "../assets/high-temperature.png";
+import extinction from "../assets/extinction.png";
+import ecosystem from "../assets/ecosystem.png";
 
 export default {
   name: "Home",
   components: {
     Navbar,
     Footer,
+    Column,
+  },
+  data: function () {
+    return {
+      columns: [
+        {
+          id: "1",
+          header: "Mortality",
+          text: "The number of annual deaths directly related to pollution is increasing every year.",
+          image: mortality,
+          imgClass: "pollution-img",
+        },
+        {
+          id: "2",
+          header: "Temperature",
+          text: "Global temperatures are rising every year and glaciers are metling thanks to this.",
+          image: temperature,
+          imgClass: "pollution-img",
+        },
+        {
+          id: "3",
+          header: "Extinction",
+          text: "Animal species are constantly endangered due to the destruction of natural habitats.",
+          image: extinction,
+          imgClass: "pollution-img",
+        },
+        {
+          id: "3",
+          header: "Ecosystems",
+          text: "Ecosystems are constantly changing, causing a drastic change for animal species.",
+          image: ecosystem,
+          imgClass: "pollution-img",
+        },
+      ],
+    };
   },
 };
 </script>
 
 <style scoped>
-.custom-mw{
-  @apply lg:text-lg;
-  max-width: 650px;
+.custom-mw {
+  @apply lg:text-lg leading-relaxed;
+  max-width: 550px;
 }
 
-.custom-container-mw{
-  max-width: 90rem;
+.custom-container-mw {
+  max-width: 80rem;
+}
+
+.column img {
+  width: 10px;
 }
 </style>

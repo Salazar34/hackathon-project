@@ -10,6 +10,10 @@ body {
   animation: bg-animation 15s infinite alternate;
 }
 
+.pollution-img {
+  width: 170px !important;
+}
+
 @keyframes bg-animation {
   from {
     background-position: left;
