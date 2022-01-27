@@ -49,18 +49,44 @@
     <h1 class="lg:text-4xl text-center uppercase mt-40">
       Pollution consequences
     </h1>
-    <div class="grid lg:grid-cols-2 mt-20">
-      <div
-        v-for="column in columns"
-        v-bind:key="column.id"
-        class="column flex flex-col items-center mb-16"
-      >
-        <Column
-          :header="column.header"
-          :image="column"
-          :text="column.text"
-          :additionalClass="column.imgClass"
-        />
+    <div class="flex flex-row items-center justify-center mx-auto">
+      <div class="grid lg:grid-cols-2 mt-20">
+        <div
+          v-for="column in columns"
+          v-bind:key="column.id"
+          class="column flex flex-col items-center"
+        >
+          <Column
+            :header="column.header"
+            :image="column"
+            :additionalClass="column.imgClass"
+          />
+        </div>
+      </div>
+      <div class="container flex flex-col items-center justify-center">
+        <p class="lg:text-lg lg:w-1/2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+          cupiditate iusto, neque laborum fugiat vitae repellendus architecto
+          animi officia debitis commodi labore, aperiam, autem laudantium
+          quisquam omnis sed nisi nulla.
+        </p>
+        <ul class="list-decimal lg:text-lg lg:w-1/2 mt-10">
+          <li class="mb-5">
+            Increased mortality related to cardivascular and respiratory
+            diseases
+          </li>
+          <li class="mb-5">
+            Rising global temperatures resulting in melting glaciers and
+            increased natural disasters.
+          </li>
+          <li class="mb-5">
+            Continued extinction of animal species, caused by climate anomalies
+            and/or continued predator migrations.
+          </li>
+          <li>
+            Disruption of natural ecosystems and destruction of animal habitats.
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -125,6 +151,10 @@ export default {
 .custom-mw {
   @apply lg:text-lg leading-relaxed;
   max-width: 550px;
+}
+
+.column {
+  width: 100%;
 }
 
 .custom-container-mw {

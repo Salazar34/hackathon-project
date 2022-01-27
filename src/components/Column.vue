@@ -6,7 +6,7 @@
     alt=""
     width="250"
   />
-  <p class="security-goal">
+  <p class="column-text">
     {{ text }}
   </p>
 </template>
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped>
-p.security-goal {
+p.column-text {
   @apply py-10 text-justify lg:w-96 w-9/12 leading-relaxed;
   font-size: 17px;
 }
