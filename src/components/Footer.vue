@@ -4,7 +4,7 @@
       class="container mx-auto flex lg:flex-row flex-col items-center justify-center lg:space-x-96 lg:text-left text-center"
     >
       <div class="flex-col">
-        <img class="" src="../assets/Temp.png" alt="Temp logo" width="200" />
+        <img class="" src="../assets/Temp.png" alt="Temp logo" width="300" />
       </div>
       <div class="links flex flex-col gap-2">
         <h1 class="font-bold pt-10">Useful Links</h1>

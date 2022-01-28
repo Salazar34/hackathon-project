@@ -55,7 +55,7 @@
         </ul>
       </div>
       <img
-        class="city-img w-5/6 mt-10"
+        class="city-img mt-10"
         src="../assets/pollution.png"
         alt="Polluted city"
         width="500"
@@ -141,7 +141,7 @@
         </ul>
       </div>
       <img
-        class="city-img w-5/6 mt-10"
+        class="city-img mt-10"
         src="../assets/futured-city.jpg"
         alt="Futured city"
         width="500"
