@@ -23,6 +23,12 @@
         <h1 class="lg:text-5xl text-3xl uppercase text-center mb-10">
           The problem
         </h1>
+        <img
+          class="lg:hidden w-5/6 py-10 mx-auto"
+          src="../assets/pollution.png"
+          alt="Polluted city"
+          width="500"
+        />
         <p class="custom-mw">
           In the last decades the percentage of pollution in all cities and
           metropolis is constantly increasing, due to the continuous use of
@@ -49,7 +55,7 @@
         </ul>
       </div>
       <img
-        class="w-4/5 mt-10"
+        class="city-img w-5/6 mt-10"
         src="../assets/pollution.png"
         alt="Polluted city"
         width="500"
@@ -106,10 +112,15 @@
     <div
       class="custom-container-mw flex lg:flex-row flex-col items-center justify-between mt-36 mx-auto"
     >
-      <div class="flex flex-col lg:w-full text-justify w-5/6">
+      <div class="flex flex-col lg:w-full text-justify w-5/6 pb-20">
         <h1 class="lg:text-5xl text-3xl uppercase text-center mb-10">
           The solution
         </h1>
+        <img
+          class="lg:hidden w-5/6 mx-auto py-5"
+          src="../assets/futured-city.jpg"
+          alt=""
+        />
         <p class="custom-mw">
           The weapon we need to use to fight the pollution and its releated
           problems are sustainable energies and the common sense of allò the
@@ -130,7 +141,7 @@
         </ul>
       </div>
       <img
-        class="lg:w-full w-5/6 mt-10"
+        class="city-img w-5/6 mt-10"
         src="../assets/futured-city.jpg"
         alt="Futured city"
         width="500"
@@ -198,6 +209,12 @@ export default {
 .custom-mw {
   @apply lg:text-lg leading-relaxed;
   max-width: 550px;
+}
+
+@media (max-width: 1024px) {
+  .city-img {
+    display: none;
+  }
 }
 
 .custom-mw li:not(:last-child) {
